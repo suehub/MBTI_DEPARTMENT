@@ -1,0 +1,8 @@
+#result {
+    display: none;
+}
+
+.result-img > img {
+    width: 500px;
+    height: 500px;
+}
