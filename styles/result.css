@@ -1,8 +1,39 @@
 #result {
     display: none;
+    max-width: 500px;
+    width: 300px;
+    height: fit-content;
+    margin: 1vh auto auto;
+    text-align: center;
+    color: rgb(26, 29, 38);
+}
+
+.result-title {
+    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.result-img {
+    padding-top: 5vh;
+    width: auto;
+    height: 256px;
+    margin: 5vh auto;
 }
 
 .result-img > img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+.result-name {
+    display: none;
+}
+
+.result-desc {
+    margin-top: 13vh;
+    font-size: 15px;
+    font-weight: 600;
 }

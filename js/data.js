@@ -125,7 +125,7 @@ const qnaList = [
   const infoList = [
     {
         name: 'INTP',
-        desc: '화학공학과, 생명공학과, 컴퓨터공학'
+        desc: '화학공학과, 생명공학과, 컴퓨터공학과'
     },
     {
         name: 'INTJ',
@@ -145,7 +145,7 @@ const qnaList = [
     },
     {
         name: 'ENFJ',
-        desc: '심리학과 영어영문학과 사회복지학과'
+        desc: '심리학과, 영어영문학과, 사회복지학과'
     },
     {
         name: 'ENFP',
@@ -182,5 +182,9 @@ const qnaList = [
     {
         name: 'ESFP',
         desc: '패션디자인학과, 체육학과, 시각디자인학과'
+    },
+    {
+      name: 'ENTP',
+      desc: '공연예술전공, 국제관계학과, 미디어커뮤니케이션학과'
     }
   ]

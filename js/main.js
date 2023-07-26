@@ -35,7 +35,6 @@ function setResult() {
     var imgURL = '../assets/' + result + '.png';
     resultImg.src = imgURL;
     resultImg.alt = result;
-    // resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
 
     const resultDesc = document.querySelector('.result-desc');

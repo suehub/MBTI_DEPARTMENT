@@ -6,14 +6,17 @@
     <title>나에게 맞는 학과는?</title>
     <link rel="stylesheet" href="./styles/general.css" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/test.css" />
+    <link rel="stylesheet" href="./styles/question.css" />
     <link rel="stylesheet" href="./styles/result.css" />
 </head>
 <body>
     <div class="container">
         <section id="start">
-            <p>나에게 맞는 학과는?</p>
-            <button onclick="begin();">Start</button>
+            <p class="start-title">나에게 맞는 학과는?</p>
+            <div class="start-img">
+                <img src="./assets/start_img.jpg" alt="start img" loading="lazy" />
+            </div>
+            <button class="start-button" onclick="begin();">Start</button>
         </section>
     
         <section id="question">
@@ -22,7 +25,7 @@
         </section>
     
         <section id="result">
-            <p>나에게 맞는 학과는?</p>
+            <p class="result-title">나에게 맞는 학과는?</p>
 
             <div class="result-img"></div>
             <div class="result-name"></div>
