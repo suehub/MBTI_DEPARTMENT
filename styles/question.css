@@ -18,7 +18,7 @@
     margin: 10vh auto;
 }
 
-.answerList {
+.answer-box__list {
     margin-top: 1vh;
     font-size: 15px;
     width: auto;
@@ -34,6 +34,6 @@
     cursor: pointer;
 }
 
-.answerList:hover {
+.answer-box__list:hover {
     transform: scale(1.05);
 }

@@ -2,19 +2,18 @@ const start = document.querySelector("#start");
 const question = document.querySelector("#question");
 const result = document.querySelector("#result");
 const endPoint = 12;
-const select = [0, 0, 0, 0, 0, 0, 0, 0];
+const select = [0, 0, 0, 0, 0, 0, 0, 0];    // E I N S F T P J
 
 function calResult() {
 
     let idx = 0;
     let result = '';
 
-    console.log(select);
     for(let i=0; i<select.length; i+=2) {
         (select[i] < select[i+1]) ? idx=i+1 : idx=i;
         result += MBTIType[idx].name;
     }
-
+    console.log(result);
     return result;
 }
 
@@ -46,30 +45,29 @@ function setResult() {
 function goResult() {
     question.style.display = "none";
     result.style.display = "block";
-    let qIdx = 0;
-    goNext(qIdx);
+    // let qIdx = 0;
+    // goNext(qIdx);
     setResult();
-    calResult();
 }
 
 function addAnswer(answerText, qIdx, idx) {
     let a = document.querySelector('.answer-box');
     let answer = document.createElement('button');
-    answer.classList.add('answerList');
+    answer.classList.add('answer-box__list');
     a.appendChild(answer);
     answer.innerHTML = answerText;
 
     answer.addEventListener("click", function() {
-        let children = document.querySelectorAll('.answerList');
+        let children = document.querySelectorAll('.answer-box__list');
 
-        let target = qnaList[qIdx].a[idx].type;
+        let target = qnaList[qIdx].a[idx].type; // select index (mbti 알파벳 위치)
         for(let i=0; i<target.length; i++) {
-            select[target[i]] += 1;
+            select[target[i]] += 1; // select 배열에서 각 mbti 위치의 값 증가
         }
 
         for(let i=0; i < children.length; i++) {
-            children[i].disabled = true;
-            children[i].style.display = 'none';
+            // children[i].disabled = true;
+            children[i].style.display = 'none'; // 이전 선택지 none으로
         }
         goNext(++qIdx);
     }, false);
