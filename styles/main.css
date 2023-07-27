@@ -27,6 +27,7 @@
 }
 .start-img > img {
     width: 300px;
+    height: 215px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.33);
@@ -43,7 +44,7 @@
     font-family: GmarketSansBold;
     font-weight: bold;
     line-height: 1.08;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
