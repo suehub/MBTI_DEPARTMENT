@@ -9,6 +9,7 @@ function calResult() {
     let idx = 0;
     let result = '';
 
+    console.log(select);
     for(let i=0; i<select.length; i+=2) {
         (select[i] < select[i+1]) ? idx=i+1 : idx=i;
         result += MBTIType[idx].name;
