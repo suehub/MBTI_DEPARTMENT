@@ -12,8 +12,7 @@
 * 선택지에 따른 MBTI와 추천 학과를 보여준다.
 
 **배포 주소**
-*  https://playful-cascaron-a92e30.netlify.app/
-
+*  https://mbti-department.netlify.app
 
 **기술 스택**
 - <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
