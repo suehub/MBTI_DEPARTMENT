@@ -33,7 +33,7 @@
     display: none;
 }
 
-.result-desc {
+.result-department {
     background-color: #fff;
     border-radius: 8px;
     padding: 8px 0px;
@@ -42,4 +42,25 @@
     line-height: 1.3;
     font-weight: 600;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.33);
+}
+
+
+.restart-button {
+    width: auto;
+    margin-top: 10px;
+    padding: 20px 80px;
+    border-radius: 8px;
+    border: 2px solid rgb(26, 29, 38);
+    color: rgb(26, 29, 38);
+    font-size: 24px;
+    text-align: center;
+    font-family: GmarketSansBold;
+    font-weight: bold;
+    line-height: 1.08;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    transform: scale(1.05);
 }

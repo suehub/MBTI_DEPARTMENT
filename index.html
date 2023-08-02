@@ -13,11 +13,11 @@
     <div class="container">
         <!-- 시작 화면 -->
         <section id="start">
-            <p class="start-title">나에게 맞는 학과는?</p>
+            <p class="start-title">MBTI 별 나에게 맞는 학과는?</p>
             <div class="start-img">
                 <img src="./assets/start_img.jpg" alt="start img" loading="lazy" />
             </div>
-            <button class="start-button" onclick="begin();">Start</button>
+            <button type="button" class="start-button">Start</button>
         </section>
     
         <!-- 질문 화면 -->
@@ -32,11 +32,14 @@
 
             <div class="result-img"></div>
             <div class="result-name"></div>
-            <div class="result-desc"></div>
+            <div class="result-department"></div>
 
+            <button type="button" class="restart-button">Restart</button>
         </section>
     </div>
-    <script src="./js/data.js" charset="UTF-8"></script>
-    <script src="./js/main.js" charset="UTF-8"></script>
+
 </body>
+
+<script src="./js/main.js" charset="UTF-8" type="module"></script>
+
 </html>
