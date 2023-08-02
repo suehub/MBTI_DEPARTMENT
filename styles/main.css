@@ -14,14 +14,15 @@
     color: rgb(26, 29, 38);
 }
 .start-title{
-    padding-top: 80px;
+    padding-top: 60px;
     font-size: 30px;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .start-img {
-    padding-top: 10vh;
-    width: auto;
+    padding-top: 8vh;
+    width: 300px;
     height: 256px;
     margin: 5vh auto;
 }
@@ -39,10 +40,9 @@
     border-radius: 8px;
     border: 2px solid rgb(26, 29, 38);
     color: rgb(26, 29, 38);
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    font-family: GmarketSansBold;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.08;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
     cursor: pointer;

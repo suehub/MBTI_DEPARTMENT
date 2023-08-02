@@ -36,14 +36,14 @@ function goNext(qIdx){
 
 // 질문 추가
 function addAnswer(answerText, qIdx, idx) {
-    let a = document.querySelector('.answer-box');
-    let answer = document.createElement('button');
+    const a = document.querySelector('.answer-box');
+    const answer = document.createElement('button');
     answer.classList.add('answer-box__list');
     a.appendChild(answer);
     answer.innerHTML = answerText;
 
     answer.addEventListener("click", function() {
-        let children = document.querySelectorAll('.answer-box__list');
+        const children = document.querySelectorAll('.answer-box__list');
 
         let target = qnaList[qIdx].a[idx].type; // select index (mbti 알파벳 위치)
         for(let i=0; i<target.length; i++) {
@@ -73,7 +73,7 @@ function calResult() {
 
 // 결과 엘리먼트 생성
 function setResult() {
-    let result = calResult();
+    const result = calResult();
     let point = 0;
     
     for(let i=0; i<infoList.length; i++) {
@@ -85,15 +85,19 @@ function setResult() {
    
     resultName.innerHTML = infoList[point].name;
 
-    let resultImg = document.createElement('img');
+    const resultImg = document.createElement('img');
     const imgDiv = document.querySelector('.result-img');
     let imgURL = '../assets/' + result + '.png';
     resultImg.src = imgURL;
     resultImg.alt = result;
     imgDiv.appendChild(resultImg);
+    resultImg.setAttribute('loading', 'lazy');
+
+    const resultDesc = document.querySelector('.result-desc');
+    resultDesc.innerHTML = infoList[point].desc;
 
     const resultDepart = document.querySelector('.result-department');
-    resultDepart.innerHTML = infoList[point].department;
+    resultDepart.innerHTML = infoList[point].department;    
 
 }
 

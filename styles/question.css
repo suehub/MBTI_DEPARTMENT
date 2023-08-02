@@ -12,16 +12,17 @@
     padding-top: 80px;
     font-size: 20px;
     font-weight: 700;
+    line-height: 1.4;
 }
 
 .answer-box {
-    margin: 10vh auto;
+    margin: 10vh 0;
 }
 
 .answer-box__list {
-    margin-top: 1vh;
+    margin-top: 1.5vh;
     font-size: 15px;
-    width: auto;
+    width: 305px;
     padding: 20px 15px;
     border-radius: 8px;
     border: 2px solid rgb(26, 29, 38);
@@ -29,11 +30,12 @@
     font-size: 15px;
     text-align: center;
     font-weight: bold;
-    line-height: 1.08;
+    line-height: 1.2;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
 .answer-box__list:hover {
     transform: scale(1.05);
+    border: 2.3px solid rgb(26, 29, 38);
 }
