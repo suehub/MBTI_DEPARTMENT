@@ -7,7 +7,7 @@
 // P 6
 // J 7
 
-const qnaList = [
+export const qnaList = [
     {
       q: '(1/12) 떨리는 1학년 OT날! 어떻게 친구들을 사귀지?',
       a: [
@@ -95,7 +95,7 @@ const qnaList = [
     }
   ]
   
-  const MBTIType = [
+  export const MBTIType = [
     {
       name: 'E'
     },
@@ -122,69 +122,85 @@ const qnaList = [
     }
   ]
 
-  const infoList = [
+  export const infoList = [
     {
         name: 'INTP',
-        desc: '화학공학과<br> 생명공학과<br> 컴퓨터공학과'
+        desc: '지적 호기심이 높으며 잠재력과 가능성을 중요시하는 당신!',
+        department: '화학공학과<br> 생명공학과<br> 컴퓨터공학과'
     },
     {
         name: 'INTJ',
-        desc: '경영학과<br> 회계학과<br> 건설시스템공학과'
+        desc: '의지가 강하고 독립적이며 분석력이 뛰어난 당신!',
+        department: '경영학과<br> 회계학과<br> 건설시스템공학과'
     },
     {
         name: 'ENTJ',
-        desc: '경영학과<br> 경제금융전공<br> 경제학과'
+        desc: '철저한 준비성과 함께 활동적이고 통솔력이 있으며 단호한 당신!',
+        department: '경영학과<br> 경제금융전공<br> 경제학과'
     },
     {
         name: 'INFJ',
-        desc: '재활심리학과<br> 직업재활과<br> 식품영양학과'
+        desc: '높은 통찰력으로 사람들에게 영감을 주며 공동체의 이익을 중요시하는 당신!',
+        department: '재활심리학과<br> 직업재활과<br> 식품영양학과'
     },
     {
         name: 'INFP',
-        desc: '시각디자인전공<br> 사범대학<br> 산업디자인학과'
+        desc: '성실하고 이해심이 많으며 개방적이고 잘 표현하지 않으나 내적 신념이 강한 당신!',
+        department: '시각디자인전공<br> 사범대학<br> 산업디자인학과'
     },
     {
         name: 'ENFJ',
-        desc: '심리학과<br> 영어영문학과<br> 사회복지학과'
+        desc: '사교적이고 타인의 의견을 존중하며 비판을 받으면 예민하게 반응하는 당신!',
+        department: '심리학과<br> 영어영문학과<br> 사회복지학과'
     },
     {
         name: 'ENFP',
-        desc: '미디어커뮤니케이션학과<br> 심리학과<br> 재활심리학과'
+        desc: '상상력이 풍부하고 순발력이 뛰어나며 일상적인 활동에 지루함을 느끼는 당신!',
+        department: '미디어커뮤니케이션학과<br> 심리학과<br> 재활심리학과'
     },
     {
         name: 'ISTJ',
-        desc: '사범대학<br> 문헌정보학과<br> 경찰행정학전공'
+        desc: '책임감이 강하고 현실적이며 매사에 철저하고 보수적인 당신!',
+        department: '사범대학<br> 문헌정보학과<br> 경찰행정학전공'
     },
     {
         name: 'ISFJ',
-        desc: '간호학과<br> 물리치료학과<br> 식품영양학과'
+        desc: '차분하고 헌신적이며 인내심이 강하고 타인의 감정변화에 주의를 기울이는 당신!',
+        department: '간호학과<br> 물리치료학과<br> 식품영양학과'
     },
     {
         name: 'ESTJ',
-        desc: '경제금융전공<br> 군사학과<br> 사범대학'
+        desc: '체계적으로 일하고 규칙을 준수하며 사실적 목표 설정에 능한 당신!',
+        department: '경제금융전공<br> 군사학과<br> 사범대학'
     },
     {
         name: 'ESFJ',
-        desc: '경영학과<br> 언어치료학과<br> 간호학과'
+        desc: '사람에 대한 관심이 많고 친절하며 동정심이 많은 당신!',
+        department: '경영학과<br> 언어치료학과<br> 간호학과'
     },
     {
         name: 'ISTP',
-        desc: '경찰행정전공<br> 경제학과<br> 빅데이터전공'
+        desc: '과묵하고 분석적이며 적응력이 강한 당신!',
+        department: '경찰행정전공<br> 경제학과<br> 빅데이터전공'
     },
     {
         name: 'ISFP',
-        desc: '자치경찰학과<br> 경제학과<br> 산림자원학과'
+        desc: '온화하고 겸손하며 삶의 여유를 만끽하는 당신!',
+        department: '자치경찰학과<br> 경제학과<br> 산림자원학과'
     },
     {
         name: 'ESTP',
-        desc: '체육학과<br> 건축공학과<br> 건설시스템공학'
+        desc: '느긋하고 관용적이며 타협을 잘하고 현실적 문제 해결에 능숙한 당신!',
+        department: '체육학과<br> 건축공학과<br> 건설시스템공학'
     },
     {
         name: 'ESFP',
-        desc: '패션디자인학과<br> 체육학과<br> 시각디자인학과'
+        desc: '호기심이 많으며 개방적이고 구체적인 사실을 중시하는 당신!',
+        department: '패션디자인학과<br> 체육학과<br> 시각디자인학과'
     },
     {
       name: 'ENTP',
-      desc: '공연예술전공<br> 국제관계학과<br> 미디어커뮤니케이션학과'
+      desc: '박학다식하고 독창적이며 끊임없이 새로운 시도하는 당신!',
+      department: '공연예술전공<br> 국제관계학과<br> 미디어커뮤니케이션학과'
     }
   ]
