@@ -41,11 +41,11 @@
 }
 
 .result-department {
-    width: 280px;
+    width: 250px;
     background-color: whitesmoke;
     border-radius: 8px;
     padding: 8px 0px;
-    margin-top: 3vh;
+    margin: 3vh auto;
     font-size: 17px;
     line-height: 1.3;
     font-weight: 600;
@@ -54,7 +54,7 @@
 
 .restart-button {
     width: auto;
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding: 20px 70px;
     border-radius: 8px;
     border: 2px solid rgb(26, 29, 38);

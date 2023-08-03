@@ -42,7 +42,7 @@ function addAnswer(answerText, qIdx, idx) {
     a.appendChild(answer);
     answer.innerHTML = answerText;
 
-    answer.addEventListener("click", function() {
+    answer.addEventListener("click", () => {
         const children = document.querySelectorAll('.answer-box__list');
 
         let target = qnaList[qIdx].a[idx].type; // select index (mbti 알파벳 위치)
