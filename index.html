@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/question.css" />
     <link rel="stylesheet" href="./styles/result.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -28,14 +30,20 @@
     
         <!-- 결과 화면 -->
         <section id="result">
-            <p class="result-title">나에게 맞는 학과는?</p>
 
-            <div class="result-img"></div>
-            <div class="result-name"></div>
-            <div class="result-desc"></div>
-            <div class="result-department"></div>
+            <div id="capture">
+                <p class="result-title">나에게 맞는 학과는?</p>
+
+                <div class="result-img"></div>
+                <div class="result-name"></div>
+                <div class="result-desc"></div>
+                <div class="result-department"></div>
+            </div>
+            
 
             <button type="button" class="restart-button">Restart</button>
+            <button type="button" class="save-button">Save</button>
+
         </section>
     </div>
 

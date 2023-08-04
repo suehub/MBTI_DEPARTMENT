@@ -117,3 +117,20 @@ function restart() {
         location.reload();  
     })
 }
+
+
+// 결과 이미지로 저장하기
+function save() {
+    const shareBtn = document.querySelector('.save-button');
+
+    shareBtn.addEventListener('click', () => {
+        html2canvas(document.querySelector('#capture')).then(canvas => {
+            let imgEl = document.createElement('a');
+            imgEl.href = canvas.toDataURL('imge/png');
+            imgEl.download = '나에게_맞는_학과는.jpg';
+            imgEl.click();
+        });
+    })
+}
+
+save();
